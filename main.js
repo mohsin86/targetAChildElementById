@@ -1,9 +1,11 @@
 // suppoese headline_option1 is an parent and there is multiple em child Element inside of that ids
-    var emElmntsOpt1 =  getNthElementByIdIfExists('headline_option1','em');
+  // @param Id, Element, position
+ var emElmntsOpt1 =  getNthElementByIdIfExists('headline','em',2);
     if(emElmntsOpt1!=null){
         emElmntsOpt1.classList.add('secendElm');
     }
 
+// Return Targeted Elements or null
 function getNthElementByIdIfExists(parentId,childElm,nThPosition) {
     // Select the parent element by its ID
     var parentElement = document.getElementById(parentId);
