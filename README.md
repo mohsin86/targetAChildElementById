@@ -23,9 +23,9 @@ function getNthElementByIdIfExists(parentId,childElm,nThPosition) {
         // Get all <em> elements inside the parent element
         var emElements = parentElement.getElementsByTagName(childElm);
         // Check if there are at least two <em> elements
-        if (emElements.length >= nThPosition) {
+        if (emElements.length >= nThPosition+1) {
             // Access the second <nTh> element (index 1)
-            var nthElement = emElements[nThPosition];
+            var nthElement = emElements[nThPosition-1];
 
             // Return the second <em> element
             return nthElement;
